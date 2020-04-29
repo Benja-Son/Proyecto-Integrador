@@ -1,3 +1,7 @@
+body{
+  background-color: gray;
+}
+
 .sidebar{
     height: 100%; 
   width: 160px; 
@@ -28,3 +32,8 @@ div .home{
   height: 30px;
   padding-right: 10px;
 }
+
+.CajasFila1 .caja{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
