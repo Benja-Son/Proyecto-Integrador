@@ -31,7 +31,7 @@ div .home{
   width: 30px;
   height: 30px;
   padding-right: 10px;
-}
+
 
 
 .sidebar .Search img{
@@ -55,6 +55,7 @@ div .home{
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
+<<<<<<< HEAD
 
   .footer {
     position: fixed;
@@ -66,3 +67,9 @@ div .home{
     text-align: center;
     z-index: 1;
   }
+=======
+.conteiner .sidebar .logo  {
+width: 30px;
+height: 30px;
+}
+>>>>>>> 5adaf518edd8ec83636b20681b197190c1d85843
