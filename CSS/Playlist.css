@@ -11,7 +11,6 @@ body{
     border-style: solid;
     border-width: 0px 3px 0px 0px;
     border-color: black;
-
   }
   
   .sidebar a {
@@ -100,6 +99,14 @@ body{
     color: black;
 }
 
-.container .canciones{
-    width: 100%;
+
+.container .canciones a{
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-right: 500px;
+    margin-top: 10px;
+    padding-bottom: 5px;
 }
