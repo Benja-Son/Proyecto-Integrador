@@ -69,11 +69,18 @@ height: 30px;
     margin-left: 170px;
     text-align: center;
     z-index: 1;
+    justify-content: space-around;
   }
 .footer p{
   position: absolute;
-  right: 100px;
-  bottom: -740px;
+  bottom: -833px;
+}
+
+.footer .copy img{
+  width: 133px;
+  position: relative;
+  top: 163px;
+  left: 489px;
 }
   
 
