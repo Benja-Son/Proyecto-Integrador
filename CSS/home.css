@@ -87,3 +87,12 @@ display: block;
   background-color: chartreuse;
 }
 
+.footer .Names{
+text-align: left;
+
+}
+
+.footer .copy {
+text-align: right;
+margin-left: 200px;
+}
