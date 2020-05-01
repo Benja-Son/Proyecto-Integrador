@@ -1,11 +1,11 @@
 body{
-        background-color: cornsilk;
-        font-family: 'Raleway', sans-serif;
+    background-color: cornsilk;
+    font-family: 'Raleway', sans-serif;
   }
   
-/*sidebar*/
-
-.sidebar{
+  /*sidebar*/
+  
+  .sidebar{
     height: 100%; 
     width: 160px; 
     position: fixed; 
@@ -97,27 +97,3 @@ body{
   }
     
   /* END footer*/
-  
-.container{
-    width: 1250px;
-  margin-left: 300px;
-}
-
-.container h1{
-    color: black;
-    margin-bottom: 50px;
-}
-
-
-.container .canciones a{
-    border-style: solid;
-    border-width: 0px 0px 3px 0px;
-    border-color: black;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    margin-right: 500px;
-    margin-top: 10px;
-    padding-bottom: 5px;
-    color: black;
-}
