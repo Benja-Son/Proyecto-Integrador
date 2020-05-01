@@ -93,13 +93,15 @@ display: block;
 
 .tracksrank .titulo{
   width: 100%;
-  margin-left: 120px;
+  margin-left: 50px;
   margin-top: 50px;
+  font-size: 30px;
 }
 
 .thetracks .thecontainer .photo{
   width: 200px;
   border-radius: 7px;
+  margin-top: 30px;
 }
 
 .thetracks h2{
