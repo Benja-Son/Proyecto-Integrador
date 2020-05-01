@@ -1,5 +1,5 @@
 body{
-  background-color: rgba(19, 18, 18, 0.842);
+  background-color: cornsilk;
 }
 
 .sidebar{
@@ -62,28 +62,28 @@ height: 30px;
 
 
 .footer {
-    position: fixed;
-    bottom: 0;
+   margin-top: 10px;
     width: 1250px;
+    height: 133px;
     margin-left: 170px;
     background-color: red;
     color: white;
     text-align: center;
     z-index: 1;
+    
   }
 
 .sidebar .logo img{
 max-width: 100%;
 max-height: 100%;
 display: block;
-border-radius: 2000px;
+border-radius: 20px;
 }
 
 
 .tracksrank{
   width: 1250px;
   margin-left: 170px;
-  background-color: chartreuse;
   justify-content: space-around;
   align-items: center;
   display: flex;
@@ -93,22 +93,28 @@ border-radius: 2000px;
 .tracksrank .titulo{
   width: 100%;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 33px;
   font-size: 30px;
 }
 
 .thetracks .thecontainer .photo{
   width: 200px;
   border-radius: 7px;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 .thetracks h2{
   font-size: 10px;
-  
+  margin-left: 30px;
 
 }
 
-p{
+.thetracks p{
   font-size: 8px;
+  margin-left: 30px;
+}
+
+.thetracks a{
+  margin-left: 30px;
 }
