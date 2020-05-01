@@ -3,6 +3,8 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
+/*sidebar*/
+
 .sidebar{
   height: 100%; 
   width: 160px; 
@@ -62,6 +64,16 @@ width: 30px;
 height: 30px;
 }
 
+.sidebar .logo img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 20px;
+  }
+
+/*END sidebar*/
+
+/* footer*/
 
 .footer {
    margin-top: 10px;
@@ -84,13 +96,7 @@ height: 30px;
   left: 489px;
 }
   
-
-.sidebar .logo img{
-max-width: 100%;
-max-height: 100%;
-display: block;
-border-radius: 20px;
-}
+/* END footer*/
 
 
 .CajasFila1 .caja{
