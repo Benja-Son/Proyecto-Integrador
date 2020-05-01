@@ -90,10 +90,13 @@ body{
   
 .container{
     width: 1250px;
-  margin-left: 170px;
+  margin-left: 300px;
 }
 
-#titulo h1{
-    font-size: 30px;
+.container h1{
     color: white;
+}
+
+.container .canciones{
+    width: 100%;
 }
