@@ -66,12 +66,15 @@ height: 30px;
     width: 1250px;
     height: 133px;
     margin-left: 170px;
-    background-color: red;
-    color: white;
     text-align: center;
     z-index: 1;
-    
   }
+.footer p{
+  position: absolute;
+  right: 100px;
+  bottom: -740px;
+}
+  
 
 .sidebar .logo img{
 max-width: 100%;
