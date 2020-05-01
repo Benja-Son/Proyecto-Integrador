@@ -1,5 +1,6 @@
 body{
   background-color: cornsilk;
+  font-family: 'Raleway', sans-serif;
 }
 
 .sidebar{
@@ -93,6 +94,7 @@ border-radius: 20px;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
 }
 
 .tracksrank .titulo{
