@@ -1,5 +1,7 @@
 body{
   background-color: rgba(19, 18, 18, 0.842);
+  display: flex;
+  justify-content: center;
 }
 
 .sidebar{
@@ -82,4 +84,23 @@ display: block;
   width: 1250px;
   margin-left: 170px;
   background-color: chartreuse;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thecontainer{
+  
+}
+
+.thetracks .thecontainer .photo{
+  width: 200px;
+  border-radius: 7px;
+}
+
+h2{
+  font-size: 10px;
+}
+
+p{
+  font-size: 8px;
 }
