@@ -31,7 +31,7 @@ div .home{
   width: 30px;
   height: 30px;
   padding-right: 10px;
-}
+
 
 
 .sidebar .Search img{
@@ -55,3 +55,7 @@ div .home{
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
+.conteiner .sidebar .logo  {
+width: 30px;
+height: 30px;
+}
