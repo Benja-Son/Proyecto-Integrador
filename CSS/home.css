@@ -55,7 +55,7 @@ div .home{
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
-.conteiner .sidebar .logo  {
+.sidebar img .logo {
 width: 30px;
 height: 30px;
 }
