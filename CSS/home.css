@@ -26,12 +26,11 @@ div .home{
   float: left;
   width: 40px 120px;
 }
-
 .sidebar .home img{
   width: 30px;
   height: 30px;
   padding-right: 10px;
-
+}
 
 
 .sidebar .Search img{
@@ -55,7 +54,27 @@ div .home{
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
+<<<<<<< HEAD
 .sidebar img .logo {
 width: 30px;
 height: 30px;
 }
+=======
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+
+.sidebar .logo img{
+max-width: 100%;
+max-height: 100%;
+display: block;
+}
+>>>>>>> 4dd69fc6b36b2e9cfca3dd3265090029c34e313e
