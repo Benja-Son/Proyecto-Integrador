@@ -93,10 +93,6 @@ display: block;
   flex-wrap: wrap;
 }
 
-.thecontainer{
-  
-}
-
 .thetracks .thecontainer .photo{
   width: 200px;
   border-radius: 7px;
