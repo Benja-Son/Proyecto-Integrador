@@ -91,28 +91,18 @@ display: block;
   flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
-=======
-.footer .Names{
-text-align: left;
-
+.tracksrank .titulo{
+  width: 100%;
+  margin-left: 120px;
+  margin-top: 50px;
 }
 
-.footer .copy {
-text-align: right;
-margin-left: 200px;
-}
-.thecontainer{
-  
-}
-
->>>>>>> 9cfd68dd621af8d9097e255a98e1e849577ec2ff
 .thetracks .thecontainer .photo{
   width: 200px;
   border-radius: 7px;
 }
 
-h2{
+.thetracks h2{
   font-size: 10px;
   
 
