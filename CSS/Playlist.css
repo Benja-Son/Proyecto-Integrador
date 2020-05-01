@@ -1,5 +1,6 @@
 body{
-    background-color: rgba(19, 18, 18, 0.842);
+        background-color: cornsilk;
+        font-family: 'Raleway', sans-serif;
   }
   
   .sidebar{
@@ -90,10 +91,13 @@ body{
   
 .container{
     width: 1250px;
-  margin-left: 170px;
+  margin-left: 300px;
 }
 
-#titulo h1{
-    font-size: 30px;
-    color: white;
+.container h1{
+    color: black;
+}
+
+.container .canciones{
+    width: 100%;
 }

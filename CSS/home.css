@@ -51,16 +51,8 @@ body{
   padding-top: 0px;
 }
 
-.sidebar .CanserberoSideBar img{
-  width: 5px;
-  height: 5px;
-  padding-right: 10px;
-}
-
-.sidebar .MoonkeySideBar img{
-  width: 5px;
-  height: 5px;
-  padding-right: 10px;
+.sidebar .Playlist a{
+  justify-content: center;
 }
 
 .sidebar img .logo {
