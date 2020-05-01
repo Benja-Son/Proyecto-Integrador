@@ -1,5 +1,6 @@
 body{
-    background-color: rgba(19, 18, 18, 0.842);
+        background-color: cornsilk;
+        font-family: 'Raleway', sans-serif;
   }
   
   .sidebar{
@@ -94,7 +95,7 @@ body{
 }
 
 .container h1{
-    color: white;
+    color: black;
 }
 
 .container .canciones{
