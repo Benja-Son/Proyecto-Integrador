@@ -18,18 +18,23 @@ body{
   display: block;
 }
 
-.sidebar a:hover {
-  color: #f1f1f1;
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
-div .home{
-  float: left;
-  width: 40px 120px;
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
+
+
 .sidebar .home img{
   width: 30px;
   height: 30px;
   padding-right: 10px;
+  position: relative;
+  top: 5px;
 }
 
 
@@ -37,6 +42,12 @@ div .home{
   width: 30px;
   height: 30px;
   padding-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.sidebar .Search a{
+  padding-top: 0px;
 }
 
 .sidebar .CanserberoSideBar img{
@@ -50,10 +61,6 @@ div .home{
   height: 5px;
   padding-right: 10px;
 }
-.CajasFila1 .caja{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-  }
 
 .sidebar img .logo {
 width: 30px;
@@ -76,7 +83,13 @@ height: 30px;
 max-width: 100%;
 max-height: 100%;
 display: block;
-border-radius: 2000px;
+border-radius: 20px;
+}
+
+
+.CajasFila1 .caja{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 
