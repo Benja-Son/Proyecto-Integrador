@@ -73,30 +73,7 @@ body{
   
   /*END sidebar*/
   
-  /* footer*/
-  
-  .footer {
-    margin-top: 10px;
-     width: 700px;
-     height: 133px;
-     margin-left: 170px;
-     text-align: center;
-     z-index: 1;
-     justify-content: space-around;
-   }
- .footer p{
-   position: absolute;
-   bottom: 0px;
- }
- 
- .footer .copy img{
-   width: 133px;
-   position: relative;
-   top: 163px;
-   left: 100%;
- }
-    
-  /* END footer*/
+
   
 .container{
     width: 1250px;
