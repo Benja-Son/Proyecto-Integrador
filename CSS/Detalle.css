@@ -74,26 +74,7 @@ body{
   
   /*END sidebar*/
   
-  /* footer*/
   
-  .footer {
-    width: 1250px;
-   
-    margin-left: 170px;
-    text-align: center;
-    z-index: 1;
-    justify-content: space-around;
-    }
-  .footer p{
-    position: absolute;
-   
-  }
-  
-  .footer .copy img{
-    width: 200px;
-  }
-    
-  /* END footer*/
 
   .tracksrank{
     width: 1280px;
