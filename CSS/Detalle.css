@@ -77,24 +77,20 @@ body{
   /* footer*/
   
   .footer {
-     margin-top: 10px;
-      width: 1250px;
-      height: 133px;
-      margin-left: 170px;
-      text-align: center;
-      z-index: 1;
-      justify-content: space-around;
+    width: 1250px;
+   
+    margin-left: 170px;
+    text-align: center;
+    z-index: 1;
+    justify-content: space-around;
     }
   .footer p{
     position: absolute;
-    bottom: -833px;
+   
   }
   
   .footer .copy img{
-    width: 133px;
-    position: relative;
-    top: 163px;
-    left: 489px;
+    width: 200px;
   }
     
   /* END footer*/
