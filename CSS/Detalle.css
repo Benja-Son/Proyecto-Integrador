@@ -1,6 +1,7 @@
 body{
     background-color: cornsilk;
     font-family: 'Raleway', sans-serif;
+    width: 100%;
   }
   
   /*sidebar*/
@@ -97,3 +98,32 @@ body{
   }
     
   /* END footer*/
+
+  .tracksrank{
+    width: 1280px;
+  }
+
+  .thetracks{
+    margin-left: 233px;
+    
+  }
+
+  .thetracks img{
+    width: 400px;
+
+  }
+
+ .tracksrank .thetracks .rank{
+   position: relative;
+   left: 600px;
+   bottom: 633px;
+ }
+
+ .tracksrank .thetracks .rank ol{
+   margin-top: 10px;
+ }
+
+ .tracksrank .thetracks .rank ol li{
+   justify-content: space-around;
+   padding-top: 25px;
+ }
