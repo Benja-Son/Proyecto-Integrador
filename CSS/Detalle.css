@@ -112,5 +112,22 @@ body{
   width: 500px;
 }
 
+}
+
+/*para celulares*/
+@media only screen and (max-width: 425px){
+  
+  .thetracks{
+    width: 200px;
+    margin-left: 130px;
+  }
+
+  .thecontainer img{
+    width: 200px;
+  }
+
+  .sidebar{
+    width: 100px;
+  }
 
 }
