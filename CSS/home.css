@@ -184,7 +184,7 @@ height: 30px;
     bottom: -1920px;;
   }
 
-  /*para celulares*/
+      /*para celulares*/
 @media only screen and (max-width: 425px){
 
   body{
