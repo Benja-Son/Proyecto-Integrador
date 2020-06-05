@@ -5,7 +5,10 @@ body{
 
 /*sidebar*/
 
-
+.navbar-brand{
+  height: 70px;
+  width: 130px;
+}
 
 /*END sidebar*/
 
@@ -51,7 +54,6 @@ body{
 
 
 .tracksrank{
-  width: 1250px;
   margin-left: 0px;
   justify-content: space-around;
   align-items: center;
