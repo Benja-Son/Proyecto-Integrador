@@ -17,17 +17,18 @@ fetch(api)
         contenido += '<div class = "thecontainer"'
         contenido += '<img class="photo" src="' + element.picture + '"'
         contenido += '</div>'
-        contenido += element.name
-        contenido += //  artista
+        contenido += '<h2>;' +element.title+ '</h2>'
+        contenido += '<p>;' +element.artist.name+ '</p>'
         contenido += '<a class="more" href="Detalle.html"> Learn More </a>'
     }    
     
-    //tracksrank.innerHTML = contenido;
+    tracksrank.innerHTML = contenido;
 })
 
 
 
 }
+
 
 
 
