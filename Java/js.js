@@ -15,7 +15,7 @@ fetch(api)
         var element = data.tracks.data[i];
         contenido += '<article class= "thetracks">'
         contenido += '<div class = "thecontainer"'
-        contenido += '<img class="photo" src="' + element.picture + '"'
+        contenido += '<img class="photo" src="' + element.album.cover + '">'
         contenido += '</div>'
         contenido += '<h2>;' +element.title+ '</h2>'
         contenido += '<p>;' +element.artist.name+ '</p>'
