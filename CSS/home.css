@@ -12,6 +12,17 @@ body{
 
 /*END sidebar*/
 
+/* slider */
+
+#Grande{
+  font-size: 30px;
+  font-family: 'MuseoModerno', cursive;
+}
+
+/* END slider*/
+
+
+
 /*CAROUSEL START*/
 .d-block{
   height: 450px;
