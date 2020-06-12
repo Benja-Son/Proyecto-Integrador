@@ -14,8 +14,8 @@ fetch(api)
     for (let i = 0; i < data.tracks.data.length; i++) {
         var element = data.tracks.data[i];
         contenido += '<article class= "thetracks">'
-        contenido += '<div class = "thecontainer"'
-        contenido += '<img class="photo" src="' + element.album.cover + '">'
+        contenido += '<div class = "thecontainer">'
+        contenido += '<img class="photo" src="' + element.artist.picture + '">'
         contenido += '</div>'
         contenido += '<h2>;' +element.title+ '</h2>'
         contenido += '<p>;' +element.artist.name+ '</p>'
