@@ -37,9 +37,3 @@ fetch(api)
 
 
 
-//.catch(function(error){
-//    console.log('El error fue ' + error)
-//})
-
-
-
