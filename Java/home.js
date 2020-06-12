@@ -8,7 +8,7 @@ window.onload = function(){
     })
     .then(function (data) {
         console.log(data);
-        var tracksrank = document.querySelector('.tracksrank');
+        var tracksrank = document.querySelector('.Ctracks');
       //  console.log(content);
         var contenido = " ";
         for (let i = 0; i < data.tracks.data.length; i++) {
