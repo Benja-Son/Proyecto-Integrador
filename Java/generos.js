@@ -1,6 +1,6 @@
 window.onload = function(){
 
-    var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
+    var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre';
     
     fetch(api)
     .then(function (response) {
