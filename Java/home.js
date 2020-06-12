@@ -13,11 +13,11 @@ window.onload = function(){
         for (let i = 0; i < data.tracks.data.length; i++) {
             var element = data.tracks.data[i];
                     
-          /*
+          
             contenido += '<li>'
             contenido += '<div class="uk-card uk-card-default">'
             contenido += '<div class="uk-card-media-top">'
-            contenido += '<img src=" '+ element.artist.cover +' "  alt="">'
+            contenido += '<img src=" '+ element.artist.picture +' "  alt="">'
             contenido += '</div>'
             contenido += '<div class="uk-card-body">'
             contenido += '<h3 class="uk-card-title">Headline</h3>'
@@ -25,7 +25,7 @@ window.onload = function(){
             contenido += '</div>'
             contenido += '</div>'
             contenido += '</li>'
-            */
+            
             
         }    
         
