@@ -1,6 +1,6 @@
 window.onload = function(){
 
-    var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre';
+    var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
     
     fetch(api)
     .then(function (response) {
@@ -11,24 +11,21 @@ window.onload = function(){
         var tracksrank = document.querySelector('.tracksrank');
       //  console.log(content);
         var contenido = " ";
-        for (let i = 1; i < data.data.length; i++) {
-            var element = data.data[i];
+            var element =  data.playlists.data[0]
             contenido += '<article class= "thetracks">'
             contenido += '<div class = "thecontainer">'
             contenido += '<img class="photo" src="' + element.picture + '">'
             contenido += '</div>'
-            contenido += '<h2>' +element.name+ '</h2>'
+            contenido += '<h2>' +element.user.name+ '</h2>'
             contenido += '</article>'
     
-            console.log(element.picture)
-        }    
+            console.log(element)  
         
         tracksrank.innerHTML = contenido;
     })
     
     
-    .catch(function(error){
-        console.log("El error fue " + error )
-    })
-    
-    }
+//    .catch(function(error){
+//        console.log("El error fue " + error )
+//    })
+}
