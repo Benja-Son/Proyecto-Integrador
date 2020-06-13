@@ -3,6 +3,22 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
+#titulo{
+text-align: center;
+margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*sidebar*/
 
 .navbar-brand{
@@ -29,9 +45,22 @@ body{
   width: 100px;
 }
 
-.Ctracks{
-  margin-top: 40px;
+.pad{
+  margin-top: 20px;
  
+}
+
+canvas, img, video {
+  max-width: 100%;
+  height: auto;
+  height: 70%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.uk-card-body {
+  display: flow-root;
+  padding: 30px 30px;
 }
 /*CAROUSEL END*/
 
