@@ -37,6 +37,10 @@ margin-top: 20px;
 
 /* END slider*/
 
+.Welcome span{
+  display: none;
+}
+
 
 
 /*CAROUSEL START*/

@@ -1,5 +1,25 @@
 window.onload = function(){
 
+    var titulo = document.querySelector("#titulo")
+
+    var saludo = document.querySelector('#saludo');
+
+    var span = document.querySelector('#spanWelcome')
+
+    titulo.onmouseover = function (){
+    var nombre = prompt('Como te llamas? ')
+    if (nombre == null || nombre == '') {
+        saludo.innerHTML = "Welcome Back";
+    } else { 
+        saludo.innerHTML = "Welcome Back " + nombre + "!";
+        
+    }
+
+
+    titulo.style.display = 'none';
+      span.style.display = 'block';
+    }
+
     var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
     
     fetch(api)
@@ -12,16 +32,14 @@ window.onload = function(){
         var contenido = " ";
         for (let i = 0; i < data.tracks.data.length; i++) {
             var element = data.tracks.data[i];
-                    
-          
             contenido += '<li>'
             contenido += '<div class="uk-card uk-card-default">'
             contenido += '<div class="uk-card-media-top">'
             contenido += '<img src=" '+ element.artist.picture +' "  alt="">'
             contenido += '</div>'
             contenido += '<div class="uk-card-body">'
-            contenido += '<h3 class="uk-card-title">Headline</h3>'
-            contenido += '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>'
+            contenido += '<h3 class="uk-card-title">' + element.title + '</h3>'
+            contenido += '<p>' + 'By: ' + element.artist.name + '</p>'
             contenido += '</div>'
             contenido += '</div>'
             contenido += '</li>'
@@ -31,22 +49,17 @@ window.onload = function(){
         
         Ctracks.innerHTML = contenido;
     })
+
+    var tracksT = document.querySelector('.tracksTitle')
+
+    tracksT.innerHTML = 'Hottest Tracks'
+
+    tracksT.style.color = 'Grey'
+
     
-    var titulo = document.querySelector("#titulo")
 
-    var saludo = document.querySelector('#saludo');
-
-    titulo.onmouseover = function (){
-    var nombre = prompt('Como te llamas? ')
-    if (nombre == null || nombre == '') {
-        saludo.innerHTML = "Welcome Back";
-    } else { 
-        saludo.innerHTML = "Welcome Back " + nombre + "!";
-        
-    }
-    titulo.style.display = 'none';
-      span.style.display = 'block';
-    }
+    
+    
 
 
 
