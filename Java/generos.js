@@ -15,9 +15,11 @@ window.onload = function(){
             var element = data.data[i];
             contenido += '<article class= "thetracks">'
             contenido += '<div class = "thecontainer">'
+            contenido += '<a href="../HTML/generos-detalle.html">'
             contenido += '<img class="photo" src="' + element.picture + '">'
             contenido += '</div>'
             contenido += '<h2>' +element.name+ '</h2>'
+            contenido += '</a>'
             contenido += '</article>'
     
             console.log(element.picture)
@@ -26,6 +28,17 @@ window.onload = function(){
         tracksrank.innerHTML = contenido;
     })
     
+    
+
+
+
+
+
+
+
+
+
+
     
     .catch(function(error){
         console.log("El error fue " + error )
