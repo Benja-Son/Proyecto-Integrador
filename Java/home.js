@@ -1,10 +1,10 @@
 window.onload = function(){
 
-    var titulo = document.querySelector("#titulo")
+    var titulo = document.querySelector("#titulo");
 
     var saludo = document.querySelector('#saludo');
 
-    var span = document.querySelector('#spanWelcome')
+    var span = document.querySelector('#spanWelcome');
 
     titulo.onmouseover = function (){
     var nombre = prompt('Como te llamas? ')
@@ -38,8 +38,12 @@ window.onload = function(){
             contenido += '<img src=" '+ element.artist.picture +' "  alt="">'
             contenido += '</div>'
             contenido += '<div class="uk-card-body">'
+        //    contenido += '<a href="../HTML/cancion-detalle.html>'
             contenido += '<h3 class="uk-card-title">' + element.title + '</h3>'
+        //    contenido += '</a>'
+        //    contenido += '<a href="../HTML/artists-detalle.html">'
             contenido += '<p>' + 'By: ' + element.artist.name + '</p>'
+        //    contenido += '</a>'
             contenido += '</div>'
             contenido += '</div>'
             contenido += '</li>'
