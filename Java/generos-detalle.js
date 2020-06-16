@@ -11,7 +11,7 @@ window.onload = function(){
     })
     .then(function (data) {
         console.log(data);
-        var tracksrank = document.querySelector('.seccion-generos');
+        var seccionGeneros = document.querySelector('.seccionGeneros');
         var contenido = " ";
         for (let i = 0; i < data.length; i++) {
             var element = data.data[i];
@@ -22,7 +22,7 @@ window.onload = function(){
             console.log(element.name)
         }    
         
-        tracksrank.innerHTML = contenido;
+        seccionGeneros.innerHTML = contenido;
     })
 
 }
