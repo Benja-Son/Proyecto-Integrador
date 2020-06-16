@@ -8,20 +8,15 @@ window.onload = function(){
     })
     .then(function (data) {
         console.log(data);
-        var tracksrank = document.querySelector('.tracksrank');
-      //  console.log(content);
-        var contenido = " ";
+        var PlaylistAncho = document.querySelector('.PlaylistAncho');
+        var Playlist = " ";
             var element =  data.playlists.data[0]
-            contenido += '<article class= "thetracks">'
-            contenido += '<div class = "thecontainer">'
-            contenido += '<img class="photo" src="' + element.picture + '">'
-            contenido += '</div>'
-            contenido += '<h2>' +element.user.name+ '</h2>'
-            contenido += '</article>'
+            Playlist += '<img class="playlistPhoto" href=" '+ element.picture_medium +' ">'
+          
     
-            console.log(element)  
+            console.log(element.picture_medium)  
         
-        tracksrank.innerHTML = contenido;
+        PlaylistAncho.innerHTML = Playlist;
     })
     
     
