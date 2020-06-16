@@ -1,40 +1,46 @@
-window.onload = function(){
+//window.onload = function(){
 
-var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
+//  var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
 
-fetch(api)
-.then(function (response) {
-    return response.json();
-})
-.then(function (data) {
-    console.log(data);
-    var tracksrank = document.querySelector('.tracksrank');
-  //  console.log(content);
-    var contenido = " ";
-    for (let i = 0; i < data.tracks.data.length; i++) {
-        var element = data.tracks.data[i];
-        contenido += '<article class= "thetracks">'
-        contenido += '<div class = "thecontainer">'
-        contenido += '<img class="photo" src="' + element.artist.picture + '">'
-        contenido += '</div>'
-        contenido += '<img src=" '+ element.album.cover +' " >'
-        contenido += '<h2>;' +element.title+ '</h2>'
-        contenido += '<p>;' +element.artist.name+ '</p>'
-        contenido += '<a class="more" href="Detalle.html"> Learn More </a>'
-        contenido += '</article>'
+//  fetch(api)
+//  .then(function (response) {
+//      return response.json();
+//  })
+//  .then(function (data) {
+//      console.log(data);
+//      var Atracks = document.querySelector('.Atracks');
+//      console.log(content);
+//      var contenido = " ";
+//      for (let i = 0; i < data.tracks.data.length; i++) {
+//          var element = data.tracks.data[i];
+//          contenido += '<li> '
+//          contenido += '<div class="uk-card uk-card-default">'
+//          contenido += '<div class="uk-card-media-top">'
+//          contenido += '<img src=" '+ element.artist.picture_medium +' "  alt="">'
+//          contenido += '</div>'
+//          contenido += '<div class="uk-card-body">'
+//          contenido += '<a href="../HTML/cancion-detalle.html>'
+//          contenido += '<h3 class="uk-card-title">' + element.title + '</h3>'
+//          contenido += '</a>'
+//          contenido += '<a href="../HTML/artists-detalle.html">'
+//          contenido += '<p>' + 'By: ' + element.artist.name + '</p>'
+//          contenido += '</a>'
+//          contenido += '</div>'
+//          contenido += '</div>'
+//          contenido += '</li>'
+        
 
-        console.log(element.album.cover)
-    }    
+//      }    
     
-    tracksrank.innerHTML = contenido;
-})
+//      Atracks.innerHTML = contenido;
+//  })
 
 
-.catch(function(error){
-    console.log("El error fue " + error )
-})
+//  .catch(function(error){
+//      console.log("El error fue " + error )
+//  })
 
-}
+//  }
 
 
 
