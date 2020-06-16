@@ -8,15 +8,15 @@ window.onload = function(){
     })
     .then(function (data) {
         console.log(data);
-        var PlaylistAncho = document.querySelector('.PlaylistAncho');
+        var PlaylistAnchoUnicoo = document.querySelector('.PlaylistAnchoUnicoo');
         var Playlist = " ";
             var element =  data.playlists.data[0]
-            Playlist += '<img class="playlistPhoto" href=" '+ element.picture_medium +' ">'
+            Playlist += '<img class="playlistPhotoUnico" href=" '+ element.picture_medium +' ">'
           
     
             console.log(element.picture_medium)  
         
-        PlaylistAncho.innerHTML = Playlist;
+        PlaylistAnchoUnicoo.innerHTML = Playlist;
     })
     
     
