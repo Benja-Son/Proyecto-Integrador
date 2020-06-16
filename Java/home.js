@@ -15,10 +15,16 @@ window.onload = function(){
         
     }
 
-
     titulo.style.display = 'none';
       span.style.display = 'block';
     }
+
+
+//    sessionStorage.setItem('usuario', Json.stringify(nombre));
+//    sessionStorage.getItem('usuario');
+//    JSON.parse(sessionStorage.getItem('usuario'))
+
+
 
     var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
     
