@@ -2,7 +2,7 @@ window.onload = function(){
 
     var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/';
  
-    var URLSP = new URLSearchParams(window.location.search)    
+    var URLSP = new URLSearchParams(location.search);    
     var id = URLSP.get('id'); 
 
     fetch(api + id)
@@ -13,7 +13,7 @@ window.onload = function(){
         console.log(data);
         var tracksrank = document.querySelector('.seccion-generos');
         var contenido = " ";
-        for (let i = 1; i < data.length; i++) {
+        for (let i = 0; i < data.length; i++) {
             var element = data.data[i];
             contenido += '<div class="titulo-genero">'
             contenido += '<h1>' +element.name+ '</h1>'
