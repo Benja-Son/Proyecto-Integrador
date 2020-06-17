@@ -14,21 +14,21 @@ window.onload = function(){
     .then(function (data) {
         console.log(data);
         var tracksrank = document.querySelector('.tracksrank');
-      //  console.log(content);
         var contenido = " ";
         for (let i = 1; i < data.data.length; i++) {
             var element = data.data[i];
             contenido += '<article class= "thetracks">'
             contenido += '<div class = "thecontainer">'
-            contenido += '<a href="../HTML/generos-detalle.html?idDetalle='+i+'">'
-            contenido += '<img class="photo" src="' + element.picture + '">'
+            contenido += '<a href="../HTML/generos-detalle.html?idDetalle='+element.id+'">'
+            contenido += '<img class="photo" src="' + element.picture_medium + '">'
             contenido += '</div>'
             contenido += '<h2>' +element.name+ '</h2>'
             contenido += '</a>'
             contenido += '</article>'
     
-            console.log(element.picture)
+            console.log(element.picture_medium)
         }    
+        
         
         tracksrank.innerHTML = contenido;
     })

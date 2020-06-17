@@ -20,11 +20,11 @@ window.onload = function(){
             var element = data;
             contenido += '<div class="titulo-genero">'
             contenido += '<h1>' +element.name+ '</h1>'
-            contenido += '<img class="photo-genero" href=" '+ element.picture +' " >'
+            contenido += '<img class="photo-genero" href=" '+ element.picture_medium +' " >'
             // contenido +=  aca van los 10 artistas
     
             console.log(element.name)
-            console.log(element.picture)
+            console.log(element.picture_medium)
 
 
             seccionGeneros.innerHTML = contenido;

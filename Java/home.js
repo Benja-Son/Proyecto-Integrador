@@ -76,6 +76,8 @@ window.onload = function(){
             contenido += '</div>'
             contenido += '</li>'
 
+            console.log(element.id)
+
             Ctracks.innerHTML = contenido;
 
             var Atracks = document.querySelector(' .Atracks');

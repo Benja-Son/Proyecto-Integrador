@@ -1,16 +1,16 @@
 window.onload = function(){
 
-    var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556';
+    var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/';
  
     var queryString = location.search;
     var queryStringObj = new URLSearchParams(queryString);
     var id = queryStringObj.get('idTrack');
 
-    console.log( queryStringObj.get('idTrack'))
+   // console.log( queryStringObj.get('idTrack'))
     console.log(id)
 
 
-    fetch(api)
+    fetch(api + id)
     .then(function (response) {
         return response.json();
     })
@@ -20,12 +20,20 @@ window.onload = function(){
         var contenido = " ";
             var element = data;
             contenido += '<div class="titulo-genero">'
-            contenido += '<h1>' +element.name+ '</h1>'
-            contenido += '<img class="photo-genero" href=" '+ element.picture +' " >'
+            contenido += '<h1>' +element.title+ '</h1>'
+            contenido += '<h1>' +element.artist.name+ '</h1>'
+            contenido += '<img class="photo-genero" href=" '+ element.cover +' " >'
+            contenido += '<p>' + 'la cancion dura: ' +element.duration+ ' minutos' + '</p>'
+            contenido += '<h1>' +element.album.title+ '</h1>'
+
+            //falta boton agregar a playlist 
+
+
+
 
     
-            console.log(element.name)
-            console.log(element.picture)
+            console.log(element.title)
+            console.log(element.album.cover_medium)
 
 
             tracksDetalles.innerHTML = contenido;
