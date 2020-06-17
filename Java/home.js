@@ -72,9 +72,9 @@ window.onload = function(){
 
     var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
 
-    var queryString = location.search;
-    var queryStringObj = new URLSearchParams(queryString);
-    var id = queryStringObj.get('idTrack');
+//    var queryString = location.search;
+//    var queryStringObj = new URLSearchParams(queryString);
+//    var id = queryStringObj.get('idTrack');
 
     fetch(api)
     .then(function (response) {
@@ -95,9 +95,9 @@ window.onload = function(){
             contenido += '<a href="../HTML/tracks-detalles.html?idTrack='+element.id+'">'
             contenido += '<h3 class="uk-card-title">' + element.title + '</h3>'
             contenido += '</a>'
-        //    contenido += '<a href="../HTML/artists-detalle.html">'
-            contenido += '<p>' + 'By: ' + element.artist.name + '</p>'
-        //    contenido += '</a>'
+            contenido += '<a href="../HTML/artists-detalle.html?idArtist='+element.artist.id+'  ">'
+            contenido += '<p>' + " By: " + element.artist.name + '</p>'
+            contenido += '</a>'
             contenido += '</div>'
             contenido += '</div>'
             contenido += '</li>'
@@ -116,12 +116,9 @@ window.onload = function(){
             contenidoAlbum += '<img src=" '+ element.cover_medium +' "  alt="">'
             contenidoAlbum += '</div>'
             contenidoAlbum += '<div class="uk-card-body">'
-        //    contenido += '<a href="../HTML/cancion-detalle.html>'
+            contenidoAlbum += '<a href="../HTML/album-detalle.html?idAlbum='+element.id+'">'
             contenidoAlbum += '<h3 class="uk-card-title">' + element.title + '</h3>'
-        //    contenido += '</a>'
-        //    contenido += '<a href="../HTML/artists-detalle.html">'
             contenidoAlbum += '<p>' + 'By: ' + element.artist.name + '</p>'
-        //    contenido += '</a>'
             contenidoAlbum += '</div>'
             contenidoAlbum += '</div>'
             contenidoAlbum += '</li>'
@@ -137,12 +134,8 @@ window.onload = function(){
                 contenidoArtist += '<img src=" '+ element.picture_medium +' "  alt="">'
                 contenidoArtist += '</div>'
                 contenidoArtist += '<div class="uk-card-body">'
-            //    contenido += '<a href="../HTML/cancion-detalle.html>'
                 contenidoArtist += '<h3 class="uk-card-title">' + element.name + '</h3>'
-            //    contenido += '</a>'
-            //    contenido += '<a href="../HTML/artists-detalle.html">'
                 contenidoArtist += '<p>' + 'Ranked Position: ' + element.position + ' in Monthly Streams '+'</p>'
-            //    contenido += '</a>'
                 contenidoArtist += '</div>'
                 contenidoArtist += '</div>'
                 contenidoArtist += '</li>'
@@ -174,88 +167,3 @@ window.onload = function(){
 
 
     }
-
-    
-
-
-
-
-
-
-
-
-/* <!--Carrousel Tracks-->
-  <div class="Ctracks" uk-slider="center: true">
-
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
-           <li>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../Imagenes/thebox.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../Imagenes/dontstart.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../Imagenes/blinding.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../Imagenes/dance monkey.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../Imagenes/highestinthe.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-    </div>
-
-    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
-</div> */

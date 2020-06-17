@@ -21,11 +21,15 @@ window.onload = function(){
             var element = data;
             contenido += '<div class="titulo-genero">'
             contenido += '<h1>' +element.title+ '</h1>'
+            contenido += '<a href="../HTML/artists-detalle.html?idArtist='+element.artist.id+'  ">'
             contenido += '<h1>' +element.artist.name+ '</h1>'
-            contenido += '<img class="photo-genero" href=" '+ element.album.cover_medium +'" alt="foto" >'
+            contenido += '</a>'
+            contenido += '<img class="photo-genero" src=" '+ element.album.cover_medium +'" alt="foto" >'
             var seconds = element.duration / 60
-            contenido += '<p>' + 'Duración: ' +seconds+ ' minutos' + '</p>'
+            contenido += '<p>' + 'la cancion dura: ' +seconds+ ' minutos' + '</p>'
+            contenido += '<a href="../HTML/album-detalle.html?idAlbum='+element.album.id+'">'
             contenido += '<h1>' +element.album.title+ '</h1>'
+            contenido += '</a>'
 
             //falta boton agregar a playlist 
 
