@@ -1,14 +1,13 @@
 body{
   background-color: cornsilk;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
 }
 
 #titulo{
 text-align: center;
 margin-top: 20px;
 }
-
-
 
 
 
@@ -71,25 +70,30 @@ canvas, img, video {
 
 /* footer*/
 
-.footer {
-   margin-top: 10px;
-    width: 1250px;
-    height: 133px;
-    margin-left: 170px;
-    text-align: center;
-    z-index: 1;
-    justify-content: space-around;
-  }
-.footer p{
-  position: absolute;
-  bottom: -833px;
+footer{
+background-color: #f8f9fa;
+width: 100%;
 }
 
-.footer .copy img{
-  width: 133px;
-  position: relative;
-  top: 163px;
-  left: 489px;
+footer article{
+  width: 90%;
+  margin-left: 20px;
+  
+}
+
+.deezer img{
+width: 200px;
+border-radius: 5px;
+position: relative;
+left: 1150px;
+margin-top: 20px;
+}
+
+.RedesSociales a i{
+position: relative;
+left: 1150px;
+bottom: 60px;
+align-items: center;
 }
   
 /* END footer*/
