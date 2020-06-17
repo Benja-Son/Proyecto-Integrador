@@ -23,21 +23,21 @@ window.onload = function(){
       span.style.display = 'block';
     }
 
-    const usuario = {nombres}
+    // const usuario = {nombres}
 
     
 
-    if (condition) {
+    // if (condition) {
         
-    } else {
+    // } else {
         
-    }
+    // }
 
-    localStorage.setItem('usuario' , nombres);
-    localStorage.setItem('idname', JSON.stringify(usuario));
+    // localStorage.setItem('usuario' , nombres);
+    // localStorage.setItem('idname', JSON.stringify(usuario));
     
-    console.log(localStorage.getItem('usuario'));
-    console.log(localStorage.getItem('idname'));
+    // console.log(localStorage.getItem('usuario'));
+    // console.log(localStorage.getItem('idname'));
 
     
     
