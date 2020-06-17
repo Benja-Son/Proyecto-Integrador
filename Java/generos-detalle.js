@@ -20,7 +20,7 @@ window.onload = function(){
             var element = data;
             contenido += '<div class="titulo-genero">'
             contenido += '<h1>' +element.name+ '</h1>'
-            contenido += '<img class="photo-genero" href=" '+ element.picture_medium +' " >'
+            contenido += '<img class="photo-genero" src=" '+ element.picture_medium +' " >'
             // contenido +=  aca van los 10 artistas
     
             console.log(element.name)
