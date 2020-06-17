@@ -36,8 +36,20 @@ window.onload = function(){
 
     artistsT.style.color = ' Grey '
 
+
+
+
+
+
+
+
+
     var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
-    
+
+    var queryString = location.search;
+    var queryStringObj = new URLSearchParams(queryString);
+    var id = queryStringObj.get('idTrack');
+
     fetch(api)
     .then(function (response) {
         return response.json();
@@ -54,9 +66,9 @@ window.onload = function(){
             contenido += '<img src=" '+ element.artist.picture_medium +' "  alt="">'
             contenido += '</div>'
             contenido += '<div class="uk-card-body">'
-        //    contenido += '<a href="../HTML/cancion-detalle.html>'
+            contenido += '<a href="../HTML/tracks-detalles.html?idTrack='+element.id+'">'
             contenido += '<h3 class="uk-card-title">' + element.title + '</h3>'
-        //    contenido += '</a>'
+            contenido += '</a>'
         //    contenido += '<a href="../HTML/artists-detalle.html">'
             contenido += '<p>' + 'By: ' + element.artist.name + '</p>'
         //    contenido += '</a>'
