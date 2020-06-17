@@ -1,2 +1,2 @@
 # Proyecto-Integrador
-Benjamin, sonne, Mateo Pizzolo, Bautista Varela
+Benjamin, sonne, Mateo Pizzolo
