@@ -2,6 +2,11 @@ window.onload = function(){
 
     var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre';
     
+    var queryString = location.search;
+    var queryStringObj = new URLSearchParams(queryString);
+    queryStringObj.get('idDetalle');
+
+
     fetch(api)
     .then(function (response) {
         return response.json();
@@ -15,7 +20,7 @@ window.onload = function(){
             var element = data.data[i];
             contenido += '<article class= "thetracks">'
             contenido += '<div class = "thecontainer">'
-            contenido += '<a href="../HTML/generos-detalle.html">'
+            contenido += '<a href="../HTML/generos-detalle.html?idDetalle='+i+' ">'
             contenido += '<img class="photo" src="' + element.picture + '">'
             contenido += '</div>'
             contenido += '<h2>' +element.name+ '</h2>'

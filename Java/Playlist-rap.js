@@ -8,15 +8,17 @@ window.onload = function(){
     })
     .then(function (data) {
         console.log(data);
-        var PlaylistAnchoUnicoo = document.querySelector('.PlaylistAnchoUnicoo');
+        var PlaylistUnicoo = document.querySelector('.PlaylistUnicoo');
         var Playlist = " ";
-            var element =  data.playlists.data[0]
-            Playlist += '<img class="playlistPhotoUnico" href=" '+ element.picture_medium +' ">'
+          var element =  data.playlists.data[0]
+          PlaylistUnicoo += '<img class="playlistPhotoUnico" href=" '+ element.picture_medium +' ">'
+          PlaylistUnicoo += '<h1>'+ element.title +'</h1>'
           
     
-            console.log(element.picture_medium)  
+            console.log(element.title) 
+            console.log(element.picture_medium) 
         
-        PlaylistAnchoUnicoo.innerHTML = Playlist;
+        PlaylistUnicoo.innerHTML = Playlist;
     })
     
     

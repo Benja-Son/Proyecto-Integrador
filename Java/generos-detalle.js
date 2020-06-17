@@ -2,8 +2,12 @@ window.onload = function(){
 
     var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/';
  
-    var URLSP = new URLSearchParams(location.search);    
-    var id = URLSP.get('id'); 
+    var queryString = location.search;
+    var queryStringObj = new URLSearchParams(queryString);
+    var id = queryStringObj.get('idDetalle');
+
+    console.log( queryStringObj.get('idDetalle'))
+
 
     fetch(api + id)
     .then(function (response) {
@@ -13,17 +17,21 @@ window.onload = function(){
         console.log(data);
         var seccionGeneros = document.querySelector('.seccionGeneros');
         var contenido = " ";
-        for (let i = 0; i < data.length; i++) {
-            var element = data.data[i];
+            var element = data;
             contenido += '<div class="titulo-genero">'
             contenido += '<h1>' +element.name+ '</h1>'
+            contenido += '<img class="photo-genero" href=" '+ element.picture_medium +' " >'
             // contenido +=  aca van los 10 artistas
     
             console.log(element.name)
-        }    
+            console.log(element.picture_small)
+
+
+            seccionGeneros.innerHTML = contenido;
+
+        })    
         
-        seccionGeneros.innerHTML = contenido;
-    })
+    
 
 }
 
