@@ -6,8 +6,13 @@ window.onload = function(){
 
     var span = document.querySelector('#spanWelcome');
 
+    
+    
     titulo.onmouseover = function (){
     var nombre = prompt('Como te llamas? ')
+        var nombres=nombre
+        console.log(nombres)
+
     if (nombre == null || nombre == '') {
         saludo.innerHTML = "Welcome Back";
     } else { 
@@ -18,6 +23,27 @@ window.onload = function(){
       span.style.display = 'block';
     }
 
+    // const usuario = {nombres}
+
+    
+
+    // if (condition) {
+        
+    // } else {
+        
+    // }
+
+    // localStorage.setItem('usuario' , nombres);
+    // localStorage.setItem('idname', JSON.stringify(usuario));
+    
+    // console.log(localStorage.getItem('usuario'));
+    // console.log(localStorage.getItem('idname'));
+
+    
+    
+    
+    
+    
     var tracksT = document.querySelector('.tracksTitle')
 
     tracksT.innerHTML = 'Hottest Tracks';
