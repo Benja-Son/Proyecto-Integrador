@@ -6,38 +6,46 @@ window.onload = function(){
 
     var span = document.querySelector('#spanWelcome');
 
-    
-    
-    titulo.onmouseover = function (){
-    var nombre = prompt('Como te llamas? ')
-        var nombres=nombre
-        console.log(nombres)
 
-    if (nombre == null || nombre == '') {
-        saludo.innerHTML = "Welcome Back";
+
+    if (sessionStorage.getItem('usuario') === null) {
+        var nombre = prompt('Como te llamas? ')
+         console.log(nombre)
+
+         if (nombre == null || nombre == '') {
+            saludo.innerHTML = "Welcome Back";
+        } else { 
+            saludo.innerHTML = "Welcome Back " + nombre + "!";
+            sessionStorage.setItem('usuario' , nombre);
+        }
+        titulo.style.display = 'none';
+          span.style.display = 'block';
+
+          
     } else { 
-        saludo.innerHTML = "Welcome Back " + nombre + "!";
-        
+        var nombreu = sessionStorage.getItem('usuario')
+        saludo.innerHTML = "Welcome Back " + nombreu + "!";
+        titulo.style.display = 'none';
+          span.style.display = 'block';
     }
-    titulo.style.display = 'none';
-      span.style.display = 'block';
-    }
-
-    // const usuario = {nombres}
 
     
 
-    // if (condition) {
-        
-    // } else {
-        
-    // }
-
-    // localStorage.setItem('usuario' , nombres);
-    // localStorage.setItem('idname', JSON.stringify(usuario));
+   
     
-    // console.log(localStorage.getItem('usuario'));
-    // console.log(localStorage.getItem('idname'));
+
+    
+     
+
+    // //  var = {nombre}
+
+
+
+    // //  sessionStorage.setItem('usuario' , nombre);
+    // //  sessionStorage.setItem('idname', JSON.stringify(usuario));
+    
+    // //  console.log(sessionStorage.getItem('usuario'));
+    // //  console.log(sessionStorage.getItem('idname'));
 
     
     
