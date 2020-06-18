@@ -20,8 +20,9 @@ window.onload = function(){
         var meter = " ";
         for (let i = 0; i < data.data.length; i++) {
             var element = data.data[i];
+            console.log(element)
             meter += '<div class=" contenedorBusqueda" >'
-            meter += '<a href="../HTML/album-detalle.html?idAlbum='+element.id+'">'
+            meter += '<a href="../HTML/album-detalle.html?idAlbum='+element.album.id+'">'
             meter += '<h2 class="titulosBuscados">' + element.album.title + '<h2>'
             meter += '</a>'
             meter += '<img class="sizeIm" src=" '+ element.album.cover_medium +' " >'   
