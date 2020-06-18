@@ -21,17 +21,17 @@ window.onload = function(){
             contenido += '<div class="titulo-genero">'
             contenido += '<h1>' +element.name+ '</h1>'
             contenido += '<img class="photo-genero" src=" '+ element.picture_medium +' " >'
-            // contenido +=  aca van los 10 artistas
-    
             console.log(element.name)
             console.log(element.picture_medium)
-
-
             seccionGeneros.innerHTML = contenido;
 
         })    
-        
+            
+}
+
     
 
-}
+//      for (let i = 0; i < data.albums.data.length; i++) {
+
+
 

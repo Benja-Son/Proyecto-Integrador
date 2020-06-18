@@ -32,21 +32,9 @@ window.onload = function(){
         
         tracksrank.innerHTML = contenido;
     })
-    
-    
-
-
-
-
-
-
-
-
-
-
-    
+      
     .catch(function(error){
         console.log("El error fue " + error )
     })
     
-    }
+}
