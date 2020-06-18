@@ -38,7 +38,6 @@ window.onload = function(){
                 var contentArtistas = " ";
                 for (let i = 0; i < 9; i++){
                     var element = data.data[i];
-            //        contentArtistas += '<h1>' +" The top artists are: "+ '</h1>'
                     contentArtistas += '<h2>' + element.name + '</h2>'
                     console.log(element) 
                 }
