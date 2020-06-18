@@ -43,7 +43,7 @@ window.onload = function () {
             tracksDetalles.innerHTML = contenido;
 
             let player = document.querySelector('iframe');
-            player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + id + '&app_id=1'
+            player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=&size=medium&type=tracks&id=' + id + '&app_id=1'
 
             var button = document.querySelector('.buttonP')
             
