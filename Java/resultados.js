@@ -20,8 +20,12 @@ window.onload = function(){
         var meter = " ";
         for (let i = 0; i < data.data.length; i++) {
             var element = data.data[i];
-            meter += '<h2>' + element.album.title + '<h2>'
+            meter += '<div class=" contenedorBusqueda" >'
+            meter += '<a href="../HTML/album-detalle.html?idAlbum='+element.id+'">'
+            meter += '<h2 class="titulosBuscados">' + element.album.title + '<h2>'
+            meter += '</a>'
             meter += '<img class="sizeIm" src=" '+ element.album.cover_medium +' " >'   
+            meter += '</div>'
         }     
         buscados.innerHTML = meter           
 
@@ -30,8 +34,13 @@ window.onload = function(){
         for (let i = 0; i < data.data.length; i++) {
             var element = data.data[i];
             console.log(element.title)
-            meterTracks += '<h2>' + element.title + '<h2>'
+            var titulosBuscados = element.title 
+            meterTracks += '<div class=" contenedorBusquedaTracks">'
+            meterTracks += '<a href="../HTML/tracks-detalles.html?idTrack='+element.id+'">'
+            meterTracks += '<h2  class="titulosBuscados">' + titulosBuscados + '<h2>'
+            meterTracks += '</a>'
             meterTracks += '<img class="sizeIm" src=" '+ element.artist.picture_medium +' " >'   
+            meterTracks += '</div>'
         
         buscadosTracks.innerHTML = meterTracks           
         }
