@@ -4,9 +4,17 @@ body{
   width: 100%;
 }
 
+.poneNegro{
+  color: black;
+}
+
 #titulo{
 text-align: center;
 margin-top: 20px;
+}
+
+.titleGenre{
+  text-align: center;
 }
 
 /*sidebar*/
@@ -76,7 +84,7 @@ footer article{
 width: 200px;
 border-radius: 5px;
 position: relative;
-left: 1150px;
+left: 90%;
 margin-top: 20px;
 }
 
