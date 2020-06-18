@@ -9,7 +9,6 @@
         <!-- Archivos creados -->
         <link rel="stylesheet" href="../CSS/home.css">
         <script src="../Java/home.js"></script>
-    <!--    <script src="../Java/tracks-detalles.js"></script>   -->
     
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
@@ -62,10 +61,11 @@
         </a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" id="myInput" onkeyup="myFunction()" type="submit">Search</button>
-    </form>
+    <div class="searchBar">
+        <form action="resultados.html" class="formbuscador" method="GET">
+            <input type="text" class="input-text" name="buscador" placeholder="search...">
+        </form>
+    </div>
   </div>
 </nav>
 

@@ -25,11 +25,32 @@ window.onload = function(){
             console.log(element.picture_medium)
             seccionGeneros.innerHTML = contenido;
 
-        })    
+        })  
+
+        
+            fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + id + "/artists")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                console.log(data);
+                var topArtist = document.querySelector('.topArtist');
+                var contentArtistas = " ";
+                for (let i = 0; i < 9; i++){
+                    var element = data.data[i];
+                    contentArtistas += '<h2>' + element.name + '</h2>'
+                    console.log(element) 
+                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                    topArtist.innerHTML = contentArtistas;
+        
             
+            })
 }
 
-    
+
+//       for (let i = 0; i < data.tracks.data.length; i++) {
+//    var element = data.tracks.data[i];
 
 //      for (let i = 0; i < data.albums.data.length; i++) {
 

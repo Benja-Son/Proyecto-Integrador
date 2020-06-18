@@ -23,13 +23,7 @@ window.onload = function(){
             contenido += '<h1>' +element.name+ '</h1>'
             contenido += '<img class="photo-artist" src=" '+ element.picture_medium +'" alt="foto" >'
             contenido += '<h1>' + ' Fans: ' + element.nb_fan+ '</h1>'
-
-            //falta boton agregar a playlist 
-
-
-
-
-    
+  
             console.log(element.name)
             console.log(element.picture_medium)
 
@@ -37,6 +31,24 @@ window.onload = function(){
             artistDetalle.innerHTML = contenido;
 
         })    
+        fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + id + "/top" ) // 
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            var artistCanciones = document.querySelector('.artistCanciones');
+            var contentArtistas = " ";
+            for (let i = 0; i < data.data.length; i++){
+                var element = data.data[i];
+                contentArtistas += '<h2>' + element.title + '</h2>'
+            }
+            
+            console.log(element)
+                artistCanciones.innerHTML = contentArtistas;
+    
+        
+        })
         
     
 
