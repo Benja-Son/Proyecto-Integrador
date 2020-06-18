@@ -140,17 +140,24 @@ align-items: center;
   font-size: 30px;
 }
 
-.photo{
-  width: 200px;
+.image{
+  width: 100%;
   border-radius: 7px;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 20px;
+
+}
+
+
+
+.gTitle{
+  text-align: center;
+  width: 100%;
 }
 
 .thetracks h2{
   font-size: 17px;
   margin-left: 30px;
-
 }
 
 .thetracks p{

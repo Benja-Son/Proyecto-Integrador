@@ -18,13 +18,14 @@ window.onload = function(){
         for (let i = 1; i < data.data.length; i++) {
             var element = data.data[i];
             contenido += '<article class= "thetracks">'
-            contenido += '<div class = "thecontainer">'
+            contenido += '<div class = "overlay">'
             contenido += '<a href="../HTML/generos-detalle.html?idDetalle='+element.id+'">'
-            contenido += '<img class="photo" src="' + element.picture_medium + '">'
+            contenido += '<img class="image" src="' + element.picture_medium + '">'
             contenido += '</div>'
-            contenido += '<h2>' +element.name+ '</h2>'
+            contenido += '<h2 class="gTitle">' +element.name+ '</h2>'
             contenido += '</a>'
             contenido += '</article>'
+            
     
             console.log(element.picture_medium)
         }    
