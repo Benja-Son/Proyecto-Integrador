@@ -17,6 +17,12 @@ margin-top: 20px;
   text-align: center;
 }
 
+
+.photo-genero{
+  width: 250px;
+  height: 250px;
+}
+
 /*sidebar*/
 
 .navbar-brand{
@@ -38,6 +44,7 @@ margin-top: 20px;
 .Welcome span{
   display: none;
 }
+
 
 
 

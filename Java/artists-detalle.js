@@ -41,7 +41,9 @@ window.onload = function(){
             var contentArtistas = " ";
             for (let i = 0; i < data.data.length; i++){
                 var element = data.data[i];
+                contentArtistas += '<a href="../HTML/tracks-detalles.html?idTrack='+element.id+'">'
                 contentArtistas += '<h2>' + element.title + '</h2>'
+                contentArtistas += '</a>'
             }
             
             console.log(element)

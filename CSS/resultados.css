@@ -1,8 +1,28 @@
-.sizeIm{
-    width: 100px;
-    height: 100px;
+.sizeIm {
+    width: 200px;
+    height: 200px;
 }
 
-.fondoRojo{
-    background-color: red;
+
+.titulosBuscados {
+    font-size: 15px;
+    color: black;
+}
+
+.buscados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buscadosTracks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tituloTracks {
+    text-align: center;
+}
+
+.tituloAlbums {
+    text-align: center;
 }
