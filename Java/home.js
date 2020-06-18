@@ -23,8 +23,8 @@ window.onload = function () {
 
 
     } else {
-        var nombreu = sessionStorage.getItem('usuario')
-        saludo.innerHTML = "Welcome Back " + nombreu + "!";
+        var nombre = sessionStorage.getItem('usuario')
+        saludo.innerHTML = "Welcome Back " + nombre + "!";
         titulo.style.display = 'none';
         span.style.display = 'block';
     }
