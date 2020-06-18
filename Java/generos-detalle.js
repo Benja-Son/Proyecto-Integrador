@@ -38,8 +38,10 @@ window.onload = function () {
             var contentArtistas = " ";
             for (let i = 0; i < 9; i++) {
                 var element = data.data[i];
-                contentArtistas += '<h2>' + element.name + '</h2>'
                 console.log(element)
+                contentArtistas += '<a href="../HTML/artists-detalle.html?idArtist= '+element.id+' ">'
+                contentArtistas += '<h2>' + element.name + '</h2>'
+                contentArtistas += '</a>'
             }
 
             topArtist.innerHTML = contentArtistas;

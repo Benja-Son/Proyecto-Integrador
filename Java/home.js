@@ -32,26 +32,6 @@ window.onload = function () {
 
 
 
-
-
-
-
-
-    // //  var = {nombre}
-
-
-
-    // //  sessionStorage.setItem('usuario' , nombre);
-    // //  sessionStorage.setItem('idname', JSON.stringify(usuario));
-
-    // //  console.log(sessionStorage.getItem('usuario'));
-    // //  console.log(sessionStorage.getItem('idname'));
-
-
-
-
-
-
     var tracksT = document.querySelector('.tracksTitle')
 
     tracksT.innerHTML = 'Hottest Tracks';
