@@ -1,12 +1,5 @@
 window.onload = function () {
 
-    document.body.classList.add('js-loading');
-
-    window.addEventListener("load", showPage);
-
-    function showPage() {
-        document.body.classList.remove('js-loading');
-    }
 
     var titulo = document.querySelector("#titulo");
 
@@ -97,6 +90,7 @@ window.onload = function () {
                 contenido += '</div>'
                 contenido += '</div>'
                 contenido += '</li>'
+
 
                 console.log(element.id)
 
