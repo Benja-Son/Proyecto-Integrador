@@ -33,11 +33,8 @@ function buscarYMostrarTrack(idTrack) {
             playlistCanciones.innerHTML += '</a>'
             playlistCanciones.innerHTML += '<a href="../HTML/artists-detalle.html?idArtist=' + track.artist.id + '  ">'
             playlistCanciones.innerHTML += '<h3>' + track.artist.name + '</h3>'
-            playlistCanciones.innerHTML += '</a>'
-            var minutes = Math.floor(track.duration)
-            var seconds = track.duration - minutes * 60
-            var duracion = minutes + ':' + seconds;
-            playlistCanciones.innerHTML += '<h3>' + duracion + '</h3>'
+            playlistCanciones.innerHTML += '</a>'   
+            playlistCanciones.innerHTML += '<h3>' + track.duration / 60 + '</h3>'
             playlistCanciones.innerHTML += '</ol>'
 
 
