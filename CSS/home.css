@@ -10,7 +10,36 @@ body{
 
 /* END Welcome*/
 
+<<<<<<< HEAD
+/* START Playlist */
 
+.marcoPlaylist{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 30px;
+}
+
+.mt40{
+  margin-top: 40px;
+}
+
+.LineaPlay{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* END Playlist */
+
+
+
+.carouselStart{
+  margin-top: 200px;
+}
+=======
+
+>>>>>>> 557436e51102d81f9a45a813df33e67f47e2c084
 
 .poneNegro{
   color: black;

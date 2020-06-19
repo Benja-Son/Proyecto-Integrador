@@ -25,10 +25,29 @@ function buscarYMostrarTrack(idTrack) {
                 let cantidad = 0;
                 cantidad++;
             });
+            var playlistCanciones = document.querySelector('.playlistCanciones');
             
-            let playlistCanciones = document.querySelector('.playlistCanciones');
-            playlistCanciones.innerHTML += '<a class="despintar" href="tracks.html?id='+ track.id +'"><article class= "cancion"><a class="" href="tracks.html?id=' + track.id + `">` + track.title + '</a></article class= "cancion"></a>'
+            playlistCanciones.innerHTML += '<ol class="LineaPlay">'
+            playlistCanciones.innerHTML += '<a href="../HTML/tracks-detalles.html?idTrack=' + track.id + '">'
+            playlistCanciones.innerHTML += '<h3>' + track.title + '</h3>'
+            playlistCanciones.innerHTML += '</a>'
+            playlistCanciones.innerHTML += '<a href="../HTML/artists-detalle.html?idArtist=' + track.artist.id + '  ">'
+            playlistCanciones.innerHTML += '<h3>' + track.artist.name + '</h3>'
+            playlistCanciones.innerHTML += '</a>'   
+            playlistCanciones.innerHTML += '<h3>' + track.duration / 60 + '</h3>'
+            playlistCanciones.innerHTML += '</ol>'
+
+
+
+
             console.log(track)
         })
 }
 
+//contenidoPlaylist += '<a href="../HTML/tracks-detalles.html?idTrack=' + track.id + '">'
+//contenidoPlaylist += '<h3>' + track.title + '</h3>'
+//contenidoPlaylist += '</a>'
+//contenidoPlaylist += '<a href="../HTML/artists-detalle.html?idArtist=' + track.artist.id + '  ">'
+//contenidoPlaylist += '<h3>' + track.artist.name + '</h3>'
+//contenidoPlaylist += '</a>'
+//contenidoPlaylist += '<h3>' + track.duration+ '</h3>'
