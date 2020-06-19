@@ -60,9 +60,6 @@ window.onload = function () {
     artistsT.style.color = ' Grey '
 
 
-    var top5 = document.querySelector('.top5')
-
-    top5.innerHTML = 'Most Popular Tracks '
 
 
 
