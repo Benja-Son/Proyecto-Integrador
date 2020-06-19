@@ -61,10 +61,6 @@ window.onload = function () {
 
     var api = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
 
-    //    var queryString = location.search;
-    //    var queryStringObj = new URLSearchParams(queryString);
-    //    var id = queryStringObj.get('idTrack');
-
     fetch(api)
         .then(function (response) {
             return response.json();
