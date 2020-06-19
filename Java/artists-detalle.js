@@ -42,6 +42,7 @@ window.onload = function(){
             var contentArtistas = " ";
             for (let i = 0; i < data.data.length; i++){
                 var element = data.data[i];
+                contentArtistas += '<h2 class="seb"> '
                 contentArtistas += '<a href="../HTML/tracks-detalles.html?idTrack='+element.id+'">'
                 contentArtistas += '<h2 class="pizza">' + element.title + '</h2>'
                 contentArtistas += '</a>'

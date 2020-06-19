@@ -226,15 +226,16 @@ article .containerTD{
 .pizza{
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .contenidoX{
   display: flex;
-
+  margin-top: 20px;
 }
 .artistCanciones{
-  padding-left: 40px;
-  padding-top: 40px;
+  padding-left: 50px;
+  padding-top: 90px;
 }
 
 
