@@ -45,7 +45,7 @@ window.onload = function () {
 
     tracksT.innerHTML = 'Hottest Tracks';
 
-    tracksT.style.color = 'Grey';
+    tracksT.style.color = 'black';
 
     var albumsT = document.querySelector('.albumsTitle')
 

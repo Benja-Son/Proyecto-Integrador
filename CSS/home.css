@@ -112,7 +112,21 @@ align-items: center;
   
 /* END footer*/
 
+.tracksrankGenero{
+  margin-left: 0px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
+}
 
+.imageGenero{
+  margin: 0px;
+  width: 230px;
+  height: 230px;
+  border-radius: 7px;
+}
 
 .CajasFila1 .caja{
   display: grid;
@@ -145,7 +159,6 @@ align-items: center;
   border-radius: 7px;
   margin-top: 20px;
   margin-left: 20px;
-
 }
 
 iframe{
