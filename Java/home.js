@@ -169,3 +169,12 @@ window.onload = function () {
 
 
 }
+
+
+//contenidoPlaylist += '<a href="../HTML/tracks-detalles.html?idTrack=' + track.id + '">'
+//contenidoPlaylist += '<h3>' + track.title + '</h3>'
+//contenidoPlaylist += '</a>'
+//contenidoPlaylist += '<a href="../HTML/artists-detalle.html?idArtist=' + track.artist.id + '  ">'
+//contenidoPlaylist += '<h3>' + track.artist.name + '</h3>'
+//contenidoPlaylist += '</a>'
+//contenidoPlaylist += '<h3>' + track.duration+ '</h3>'
