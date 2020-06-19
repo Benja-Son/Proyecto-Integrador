@@ -12,6 +12,9 @@ window.onload = function () {
      console.log( queryStringObj.get('idTrack'))
     console.log(id)
 
+    function getfloor(seconds){
+        return Math.floor (seconds)
+    }
 
     fetch(api + id)
         .then(function (response) {
@@ -22,6 +25,7 @@ window.onload = function () {
             var tracksDetalles = document.querySelector('.tracksDetalles');
             var contenido = " ";
             var element = data;
+            contenido += '<article class= "containerTD">'
             contenido += '<div class="titulo-genero">'
             contenido += '<h1>' + ' Track: ' + element.title + '</h1>'
             contenido += '<a href="../HTML/artists-detalle.html?idArtist=' + element.artist.id + '  ">'
@@ -29,11 +33,11 @@ window.onload = function () {
             contenido += '</a>'
             contenido += '<img class="photo-genero" src=" ' + element.album.cover_medium + '" alt="foto" >'
             var seconds = element.duration / 60
-            contenido += '<p>' + 'duration: ' + seconds + ' minutos' + '</p>'
+            contenido += '<p>' + 'Duration: ' + seconds + ' minutos' + '</p>'
             contenido += '<a href="../HTML/album-detalle.html?idAlbum=' + element.album.id + '">'
             contenido += '<h1>' + 'Album: ' + element.album.title + '</h1>'
             contenido += '</a>'
-
+            contenido += '</article>'
 
 
 
