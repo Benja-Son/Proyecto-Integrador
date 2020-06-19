@@ -20,9 +20,10 @@ window.onload = function(){
         var contenido = " ";
             var element = data;
             contenido += '<div class="titulo-genero">'
-            contenido += '<h1>' +element.name+ '</h1>'
+            contenido += '<h1 class="titulo-bad">' +element.name+ '</h1>'
             contenido += '<img class="photo-artist" src=" '+ element.picture_medium +'" alt="foto" >'
-            contenido += '<h1>' + ' Fans: ' + element.nb_fan+ '</h1>'
+            contenido += '<h1 class="nFan">' + ' Fans: ' + element.nb_fan+ '</h1>'
+            
   
             console.log(element.name)
             console.log(element.picture_medium)
@@ -42,7 +43,7 @@ window.onload = function(){
             for (let i = 0; i < data.data.length; i++){
                 var element = data.data[i];
                 contentArtistas += '<a href="../HTML/tracks-detalles.html?idTrack='+element.id+'">'
-                contentArtistas += '<h2>' + element.title + '</h2>'
+                contentArtistas += '<h2 class="pizza">' + element.title + '</h2>'
                 contentArtistas += '</a>'
             }
             

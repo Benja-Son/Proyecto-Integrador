@@ -6,39 +6,11 @@ body{
 
 /* START Welcome */
 
-.Welcome{
-  text-align: center;
-}
 
-#saludo{
-  font-size: 60px;
-  font-weight: 700;
-  position: relative;
-  animation: text 5s 1;
-}
-
-#spanWelcome{
-    font-size: 25px;
-    position: relative;
-}
-
-@keyframes text {
-  0%{
-    color: black;
-    margin-bottom: -40px;
-  }
-  10%{
-    letter-spacing: 15px;
-    margin-bottom: -40px;
-  }
-
-}
 
 /* END Welcome*/
 
-.carouselStart{
-  margin-top: 200px;
-}
+
 
 .poneNegro{
   color: black;
@@ -176,6 +148,9 @@ align-items: center;
 
 }
 
+iframe{
+  margin-top: 80px;
+}
 
 
 .gTitle{
@@ -196,6 +171,70 @@ align-items: center;
 .thetracks a{
   margin-left: 30px;
 }
+
+.containerTDE{
+  opacity: 20px
+  ;
+}
+
+.tracksDetalles{
+  
+  width: 100%;
+}
+
+article .containerTD{
+  margin-left: 20px;
+}
+
+.buttonP{
+  margin-left: 20px;
+}
+
+.photo-artist{
+  height: 300px;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.titulo-bad{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.nFan{
+  margin-left: 20px;
+}
+
+.photo-album{
+  width: 300px;
+  height: 300px;
+}
+
+.pizza{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenidoX{
+  display: flex;
+
+}
+.artistCanciones{
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*para tablet*/
@@ -229,6 +268,10 @@ align-items: center;
     display: none;
   }
 
+  .footer p{
+    bottom: -1920px;;
+  }
+  
 
       /*para celulares*/
 @media only screen and (max-width: 425px){
