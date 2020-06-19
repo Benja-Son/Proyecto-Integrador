@@ -201,9 +201,6 @@ align-items: center;
     display: none;
   }
 
-  .footer p{
-    bottom: -1920px;;
-  }
 
       /*para celulares*/
 @media only screen and (max-width: 425px){
