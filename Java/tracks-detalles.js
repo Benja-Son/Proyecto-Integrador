@@ -87,6 +87,7 @@ window.onload = function () {
 
 
                 var agarrarStorage = localStorage.getItem('playlist')
+                
                 // button.addEventListener('click', function (){
 
                 //     window.localStorage.setItem('Id' + data.id, JSON.stringify(data));

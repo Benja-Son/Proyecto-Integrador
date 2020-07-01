@@ -68,7 +68,9 @@ window.onload = function () {
         .then(function (data) {
             console.log(data);
             var Ctracks = document.querySelector('.Ctracks');
+
             var contenido = " ";
+            
             for (let i = 0; i < data.tracks.data.length; i++) {
                 var element = data.tracks.data[i];
                 contenido += '<li>'
